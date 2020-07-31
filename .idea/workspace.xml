@@ -21,39 +21,16 @@
         <item name="GROUP_NODE:github" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cd184b7-a21d-4260-a944-4b6241fb496b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/config/Messages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/NFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/Runnable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/Economia.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/Cash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashAdd.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashCriar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashDeletar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashEnviar.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashHelp.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashReload.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashRemove.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashReset.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashSet.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashToggle.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/CashTop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/Numbers.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/commands/SubCommand.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/database/Database.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/database/MySQL.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/database/SQLite.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/fanCash.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/others/ConfigManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/others/Configuration.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/others/RefreshCashTop.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fanjoker/cash/others/Vault.java" beforeDir="false" />
+    <list default="true" id="0cd184b7-a21d-4260-a944-4b6241fb496b" name="Default Changelist" comment="Atualizações sobre a otimização do plugin">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,8 +45,9 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1fQLiwqoWclc2ufgg7b0oQV0sXB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -79,7 +57,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580843392075" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../fanVips" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -104,6 +82,28 @@
       <option name="presentableId" value="Default" />
       <updated>1552236419756</updated>
     </task>
+    <task id="LOCAL-00001" summary="Atualizações sobre a otimização do plugin">
+      <created>1596167605428</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596167605428</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Atualizações sobre a otimização do plugin">
+      <created>1596167698459</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1596167698459</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Atualizações sobre a otimização do plugin">
+      <created>1596168820410</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1596168820410</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +118,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Atualizações sobre a otimização do plugin" />
+    <option name="LAST_COMMIT_MESSAGE" value="Atualizações sobre a otimização do plugin" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1596146182514">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -127,25 +131,37 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596155985308" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596146237562">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596169203947">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596146237562" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1596147513753">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596169203947" />
+    <state x="540" y="257" width="586" height="483" key="Github.ShareDialog" timestamp="1596169590557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596147513753" />
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596157443777">
+    <state x="540" y="257" width="586" height="483" key="Github.ShareDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596169590557" />
+    <state x="841" y="240" key="RollbackChangesDialog" timestamp="1596169283430">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596157443777" />
+    <state x="841" y="240" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596169283430" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1596169821627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596169821627" />
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596167962672">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596167962672" />
     <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1596166827791">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596166827791" />
-    <state x="623" y="225" key="search.everywhere.popup" timestamp="1596150782463">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596169254024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596150782463" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596169254024" />
+    <state x="790" y="311" key="svn.repositoryBrowser" timestamp="1596168977359">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="790" y="311" key="svn.repositoryBrowser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596168977359" />
   </component>
 </project>
