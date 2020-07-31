@@ -28,6 +28,11 @@ public class Messages {
         return colorText(Main.configManager.getConfig("config").getYaml().getString("Mensagens.Yourself"));
     }
 
+    public String getCashToggle1(String toggle) {
+        return colorText(Main.configManager.getConfig("config").getYaml().getString("Mensagens.CashToggle.1")
+                .replace("{toggle}", toggle));
+    }
+
     public String getCashRemove(String name, String value) {
         return colorText(Main.configManager.getConfig("config").getYaml().getString("Mensagens.CashRemove")
                 .replace("{nome}", name)

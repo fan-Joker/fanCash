@@ -26,10 +26,7 @@ public class CashReset extends SubCommand {
 				return;
 			}
 
-			sender.sendMessage(Main.configManager.getConfig("config").getYaml().getString("Mensagens.CashSet")
-					.replace("&", "§")
-					.replace("{nome}", nome)
-					.replace("{saldo}", "0"));
+			sender.sendMessage(getCashSet(player.getName(), "0"));
 
 		} else {
 			sender.sendMessage(getUsage());

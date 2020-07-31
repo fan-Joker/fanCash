@@ -61,7 +61,7 @@ public class CashEnviar extends SubCommand {
 			player.setValue(player.getValue() + valor.doubleValue());
 			cashSender.setValue(cashSender.getValue() - valor.doubleValue());
 
-			sender.sendMessage(getCashEnviar1(nome, NFormat.format1000(valor)));
+			sender.sendMessage(getCashEnviar1(player.getName(), NFormat.format1000(valor)));
 
 			Player target = Bukkit.getPlayer(nome);
 			if (target != null) {

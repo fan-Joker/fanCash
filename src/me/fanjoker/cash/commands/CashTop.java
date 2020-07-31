@@ -31,11 +31,7 @@ public class CashTop extends SubCommand {
 				double value = player.getValue();
 				String name = player.getName();
 
-				if (i == 1)
-					sender.sendMessage(getCashTopSettings(i, name, NFormat.format1000(value)));
-				else
-					sender.sendMessage(getCashTopSettings(i, name, NFormat.format1000(value)));
-
+				sender.sendMessage(getCashTopSettings(i, name, NFormat.format1000(value)));
 
 				i++;
 			}

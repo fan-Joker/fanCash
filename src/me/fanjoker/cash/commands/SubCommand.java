@@ -98,6 +98,10 @@ public abstract class SubCommand {
 		return messages.getNotFound();
 	}
 
+	public String getCashToggle1(String toggle) {
+		return messages.getCashToggle1(toggle);
+	}
+
 	public String getCashToggle2() {
 		return messages.getCashToggle2();
 	}

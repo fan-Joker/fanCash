@@ -5,6 +5,7 @@ import java.math.BigDecimal;
 import me.fanjoker.cash.Main;
 import me.fanjoker.cash.fanCash;
 import me.fanjoker.cash.others.CashPlayer;
+import me.fanjoker.cash.others.NFormat;
 import org.bukkit.command.CommandSender;
 
 public class CashSet extends SubCommand {
@@ -32,7 +33,7 @@ public class CashSet extends SubCommand {
 				return;
 			}
 
-			sender.sendMessage(getCashSet(nome, "0"));
+			sender.sendMessage(getCashSet(nome, NFormat.format1000(valor)));
 
 		} else {
 			sender.sendMessage(getUsage());

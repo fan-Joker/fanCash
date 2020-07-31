@@ -6,6 +6,11 @@ Mysql:
   password: "teste"
   port: 3306
 
+# Placeholders:
+# {nome} - Nome do Jogador
+# {numero} - Número do Top
+# {saldo} - Quantidade de Cash
+
 Mensagens:
   NotFound: "&cJogador não encontrado em nosso banco de dados."
   IncorrectValue: "&cValor incorreto, por favor insira um valor válido."
@@ -33,7 +38,7 @@ Mensagens:
   CashTop:
     Title: "&6&l CASH TOP &7(Atualiza de 5 em 5 minutos)"
     2: "&cNão existe jogadores cadastrados ainda."
-    Settings: "&f{numero}. &e{name}: &7({saldo})"
+    Settings: "&f{numero}. &e{nome}: &7({saldo})"
 
 Settings:
   # Formato do cash:

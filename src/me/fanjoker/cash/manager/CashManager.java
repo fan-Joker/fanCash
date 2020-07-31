@@ -68,7 +68,7 @@ public class CashManager {
             ResultSet rs = stm.executeQuery();
             if (rs.next()) {
                 CashPlayer cash = new CashPlayer(rs.getString("name"), rs.getDouble("value"), rs.getBoolean("toggle"));
-                getCache().put(rs.getString("name"), cash);
+                getCache().put(rs.getString("name").toLowerCase(), cash);
             }
             rs.close();
             stm.close();
@@ -95,10 +95,10 @@ public class CashManager {
 
     public void savePlayer(String name) {
         if (getCache().isEmpty()) return;
-        CashPlayer player = getCache().get(name);
+        CashPlayer player = getPlayer(name);
         set(name, "value", player.getValue());
         set(name, "toggle", player.isToggle());
-        getCache().remove(player.getName());
+        getCache().remove(player.getName().toLowerCase());
     }
 
     public void savePlayers() {
@@ -126,13 +126,13 @@ public class CashManager {
     }
 
     public boolean isLoaded(String name) {
-        return getCache().containsKey(name);
+        return getCache().containsKey(name.toLowerCase());
     }
 
     public CashPlayer getPlayer(String name) {
         if (!existsPlayer(name)) return null;
         if (!isLoaded(name)) loadPlayer(name);
-        return getCache().get(name);
+        return getCache().get(name.toLowerCase());
     }
 
 

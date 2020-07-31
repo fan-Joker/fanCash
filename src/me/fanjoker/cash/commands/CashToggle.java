@@ -21,9 +21,8 @@ public class CashToggle extends SubCommand {
 		}
 		CashPlayer player = Main.getManager().getPlayer(sender.getName());
 		String toggle = player.isToggle() ? "desativou" : "ativou";
-		sender.sendMessage(Main.configManager.getConfig("config").getYaml().getString("Mensagens.CashToggle.1")
-						.replace("&", "§")
-						.replace("{toggle}", toggle));
+
+		sender.sendMessage(getCashToggle1(toggle));
 		player.setToggle(!player.isToggle());
 
 	}

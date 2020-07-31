@@ -33,7 +33,8 @@ public class CashRemove extends SubCommand {
 				return;
 			}
 
-			sender.sendMessage(getCashRemove(player.getName(), NFormat.format1000(player.getValue())));
+			player.setValue(player.getValue() - valor.doubleValue());
+			sender.sendMessage(getCashRemove(player.getName(), NFormat.format1000(valor)));
 
 
 		} else {

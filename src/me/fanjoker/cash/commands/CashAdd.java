@@ -37,7 +37,7 @@ public class CashAdd extends SubCommand {
 			}
 
 			player.setValue(player.getValue() + valor.doubleValue());
-			sender.sendMessage(getCashAdd(nome, NFormat.format1000(valor)));
+			sender.sendMessage(getCashAdd(player.getName(), NFormat.format1000(valor)));
 
 		} else {
 			sender.sendMessage(getUsage());
