@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="jar" name="fanCash:jar">
-    <output-path>$USER_HOME$/Desktop/aa/Rankup Militar/plugins</output-path>
+    <output-path>$USER_HOME$/Desktop/aa/Test Plugins/plugins</output-path>
     <root id="archive" name="fanCash.jar">
       <element id="module-output" name="fanCash" />
     </root>

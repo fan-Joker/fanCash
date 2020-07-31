@@ -43,9 +43,9 @@ public class Cash implements CommandExecutor {
 							|| subCommand.getAlias().contains(arg)) {
 						if (sender.hasPermission(subCommand.getPermission()) || subCommand.getPermission().isEmpty()) {
 							subCommand.execute(sender, args);
-						} else {
-							sender.sendMessage(messages.getNoPermission());
+							return true;
 						}
+						sender.sendMessage(messages.getNoPermission());
 						return false;
 					}
 				}

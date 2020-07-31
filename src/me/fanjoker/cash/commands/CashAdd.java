@@ -17,11 +17,12 @@ public class CashAdd extends SubCommand {
 
 	@Override
 	public void execute(CommandSender sender, String[] args) {
+
 		if (args.length >= 3) {
 
 			String nome = args[1];
 
-			CashPlayer player = Main.getManager().getPlayer(args[1]);
+			CashPlayer player = Main.getManager().getPlayer(nome);
 
 			if (player == null) {
 				sender.sendMessage(getNotFound());
@@ -35,6 +36,7 @@ public class CashAdd extends SubCommand {
 				return;
 			}
 
+			player.setValue(player.getValue() + valor.doubleValue());
 			sender.sendMessage(getCashAdd(nome, NFormat.format1000(valor)));
 
 		} else {

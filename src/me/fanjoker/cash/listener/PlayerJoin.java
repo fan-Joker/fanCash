@@ -10,8 +10,6 @@ public class PlayerJoin implements Listener {
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         String name = e.getPlayer().getName();
-        if (!Main.getManager().existsPlayer(name)) {
-            Main.getManager().createAccount(name);
-        }
+        Main.getManager().loadPlayer(name);
     }
 }

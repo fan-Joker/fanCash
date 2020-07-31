@@ -24,11 +24,12 @@ public class Main extends JavaPlugin{
 	public void onEnable() {
 		instance = this;
 		configManager = new ConfigManager();
+		manager = new CashManager();
 		connection = new CashConnection();
 		configManager.loadConfig("config");
-		getCommand("cash").setExecutor(new Cash("cash"));
-		Bukkit.getPluginManager().registerEvents(new PlayerJoin(), this);
-		new Runnable().runTaskTimer(instance, 0, 20 * 60 * 5);
+		connection.openConnectionMySQL();
+
+		register();
 	}
 
 	@Override
@@ -37,14 +38,18 @@ public class Main extends JavaPlugin{
 		connection.close();
 	}
 
+	private void register() {
+		getCommand("cash").setExecutor(new Cash("cash"));
+		Bukkit.getPluginManager().registerEvents(new PlayerJoin(), this);
+		new Runnable().runTaskTimer(instance, 0, 20 * 60 * 5);
+	}
+
 	public static CashManager getManager() {
 		return manager;
 	}
-
 	public static CashConnection getConnection() {
 		return connection;
 	}
-
 	public static Main getInstance() {
 		return instance;
 	}

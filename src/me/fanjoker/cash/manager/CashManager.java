@@ -56,13 +56,14 @@ public class CashManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        loadPlayer(name);
     }
 
     public void loadPlayer(String name) {
         createAccount(name);
         PreparedStatement stm = null;
         try {
-            stm = getCon().prepareStatement("SELECT * FROM `Signs` WHERE LOWER(`name`) = ?");
+            stm = getCon().prepareStatement("SELECT * FROM `Cash_PLAYER` WHERE LOWER(`name`) = ?");
             stm.setString(1, name.toLowerCase());
             ResultSet rs = stm.executeQuery();
             if (rs.next()) {
@@ -93,15 +94,19 @@ public class CashManager {
     }
 
     public void savePlayer(String name) {
+        if (getCache().isEmpty()) return;
         CashPlayer player = getCache().get(name);
         set(name, "value", player.getValue());
         set(name, "toggle", player.isToggle());
+        getCache().remove(player.getName());
     }
 
     public void savePlayers() {
-        Bukkit.getOnlinePlayers().forEach(player -> {savePlayer(player.getName());});
+        if (Bukkit.getOnlinePlayers().isEmpty()) return;
+        Bukkit.getOnlinePlayers().forEach(player -> { savePlayer(player.getName());});
     }
     public void loadPlayers() {
+        if (Bukkit.getOnlinePlayers().isEmpty()) return;
         Bukkit.getOnlinePlayers().forEach(player -> {loadPlayer(player.getName());});
     }
 
