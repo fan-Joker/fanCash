@@ -24,6 +24,7 @@ public class CashToggle extends SubCommand {
 		sender.sendMessage(Main.configManager.getConfig("config").getYaml().getString("Mensagens.CashToggle.1")
 						.replace("&", "§")
 						.replace("{toggle}", toggle));
+		player.setToggle(!player.isToggle());
 
 	}
 

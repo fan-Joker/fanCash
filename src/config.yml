@@ -12,7 +12,7 @@ Mensagens:
   Yourself: "&cVocê não pode enviar coins a si mesmo."
   NoPermission: "&cVocê não tem permissão para executar este comando"
   Cash:
-    1: "&eSeu saldo: {saldo}"
+    1: "&eSeu saldo:&f {saldo}"
     2: "&eSaldo de &f{nome} &eé &f{saldo}"
   CashAdd: "&aFoi adicionado a conta de {nome} a quantia de {saldo}"
   CashCriar:

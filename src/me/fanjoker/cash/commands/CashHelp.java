@@ -14,26 +14,28 @@ public class CashHelp extends SubCommand {
 
 	@Override
 	public void execute(CommandSender sender, String[] args) {
-		sender.sendMessage(" ");
+		sender.sendMessage("");
+		sender.sendMessage("  §e§lCash: §7Lista de comandos:");
+		sender.sendMessage("");
+		sender.sendMessage("  §e/" + command + ": §7Para ver o seu cash atual.");
+		sender.sendMessage("  §e/" + command + " <jogador>: §7Para ver o cash de um jogador.");
+		sender.sendMessage("  §e/" + command + " top: §7Para ver o cash top do servidor.");
+		sender.sendMessage("  §e/" + command + " ajuda: §7Para ver os comandos.");
 
-		sender.sendMessage("§e/" + command + " §6- §fPara ver o seu cash atual.");
-		sender.sendMessage("§e/" + command + " <jogador> §6- §fPara ver o cash de um jogador.");
-		sender.sendMessage("§e/" + command + " enviar <jogador> <valor> §6- §fPara enviar cash a um jogador.");
-		sender.sendMessage("§e/" + command + " top §6- §fPara ver o cash top do servidor.");
-		sender.sendMessage("§e/" + command + " ajuda §6- §fPara ver os comandos.");
-
-		if (sender instanceof Player)
-			sender.sendMessage("§e/" + command + " toggle §6- §fPara ativar/desativar o recebimento.");
-
-		if (sender.hasPermission("money.admin")) {
-			sender.sendMessage("§e/" + command + " set <jogador> <valor> §6- §fPara setar o cash de um jogador.");
-			sender.sendMessage("§e/" + command + " add <jogador> <valor> §6- §fPara adicionar cash a um jogador.");
-			sender.sendMessage("§e/" + command + " remove <jogador> <valor> §6- §fPara remover cash de um jogador.");
-			sender.sendMessage("§e/" + command + " reset <jogador> §6- §fPara resetar cash de um jogador.");
-			sender.sendMessage("§e/" + command + " reload §6- §fPara recarregar o cash top.");
+		if (sender instanceof Player) {
+			sender.sendMessage("  §e/" + command + " toggle: §7Para ativar/desativar o recebimento.");
+			sender.sendMessage("  §e/" + command + " enviar <jogador> <valor>: §7Para enviar cash a um player.");
 		}
 
-		sender.sendMessage(" ");
+		if (sender.hasPermission("money.admin")) {
+			sender.sendMessage("  §e/" + command + " set <jogador> <valor>: §7Para setar o cash de um player.");
+			sender.sendMessage("  §e/" + command + " add <jogador> <valor>: §7Para adicionar cash a um player.");
+			sender.sendMessage("  §e/" + command + " remove <jogador> <valor>: §7Para remover cash de um player.");
+			sender.sendMessage("  §e/" + command + " reset <jogador>: §7Para resetar cash de um player.");
+			sender.sendMessage("  §e/" + command + " reload: §7Para recarregar o cash top.");
+		}
+
+		sender.sendMessage("");
 
 	}
 
