@@ -37,7 +37,7 @@ Mensagens:
     2: "&cJogador está com recebimento de cash desativado"
   CashTop:
     Title: "&6&l CASH TOP &7(Atualiza de 5 em 5 minutos)"
-    2: "&cNão existe jogadores cadastrados ainda."
+    2: "&c  Não existe jogadores cadastrados ainda."
     Settings: "&f{numero}. &e{nome}: &7({saldo})"
 
 Settings:
