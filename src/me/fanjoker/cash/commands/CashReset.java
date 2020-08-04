@@ -26,6 +26,7 @@ public class CashReset extends SubCommand {
 				return;
 			}
 
+			player.setValue(0D);
 			sender.sendMessage(getCashSet(player.getName(), "0"));
 
 		} else {

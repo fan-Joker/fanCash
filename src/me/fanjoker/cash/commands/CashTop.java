@@ -1,6 +1,8 @@
 package me.fanjoker.cash.commands;
 
+import java.util.Collections;
 import java.util.List;
+import java.util.Map;
 
 import me.fanjoker.cash.others.CashPlayer;
 import me.fanjoker.cash.others.NFormat;
@@ -19,18 +21,16 @@ public class CashTop extends SubCommand {
 
 	@Override
 	public void execute(CommandSender sender, String[] args) {
-		List<CashPlayer> moneytop = Main.getManager().getTopList();
+		Map<String, Double> moneytop = Main.getManager().getTopList();
 
 		if (!moneytop.isEmpty()) {
 			int i = 1;
 			sender.sendMessage(" ");
 			sender.sendMessage(getCashTopTittle());
 			sender.sendMessage(" ");
-			for (CashPlayer player : Main.getManager().getTopList()) {
+			for (String name : moneytop.keySet()) {
 
-				double value = player.getValue();
-				String name = player.getName();
-
+				double value = moneytop.get(name);
 				sender.sendMessage(getCashTopSettings(i, name, NFormat.format1000(value)));
 
 				i++;

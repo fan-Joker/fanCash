@@ -11,21 +11,24 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 public class CashManager {
 
     private Map<String, CashPlayer> cache = new ConcurrentHashMap<>();
-    private List<CashPlayer> topList = new ArrayList<>();
+    private Map<String, Double> topList = new LinkedHashMap<>();
     private Connection getCon() { return Main.getConnection().getConnection(); }
 
     public Map<String, CashPlayer> getCache() {
         return cache;
     }
-    public List<CashPlayer> getTopList() {
+//    public List<CashPlayer> getTopList() {
+//        topList.sort(Comparator.comparing(CashPlayer::getValue).reversed());
+//        return topList;
+//    }
+
+    public Map<String, Double> getTopList() {
         return topList;
     }
 
@@ -84,13 +87,19 @@ public class CashManager {
             stm = getCon().prepareStatement("SELECT * FROM `Cash_PLAYER` ORDER BY CAST(value as decimal) DESC LIMIT 10");
             ResultSet rs = stm.executeQuery();
             while (rs.next()) {
-                getTopList().add(getPlayer(rs.getString("name")));
+                getTopList().put(rs.getString("name"), rs.getDouble("value"));
             }
             rs.close();
             stm.close();
         } catch (SQLException e) {
             e.printStackTrace();
         }
+    }
+
+    public void reloadAll() {
+        Main.getManager().savePlayers();
+        Main.getManager().reloadTop();
+        Main.getManager().loadPlayers();
     }
 
     public void savePlayer(String name) {
@@ -102,8 +111,8 @@ public class CashManager {
     }
 
     public void savePlayers() {
-        if (Bukkit.getOnlinePlayers().isEmpty()) return;
-        Bukkit.getOnlinePlayers().forEach(player -> { savePlayer(player.getName());});
+        if (getCache().isEmpty()) return;
+        getCache().values().forEach(cash -> { savePlayer(cash.getName());});
     }
     public void loadPlayers() {
         if (Bukkit.getOnlinePlayers().isEmpty()) return;

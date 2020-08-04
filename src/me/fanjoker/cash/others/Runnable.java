@@ -10,9 +10,7 @@ public class Runnable extends BukkitRunnable {
 
 	@Override
 	public void run() {
-		Main.getManager().savePlayers();
-		Main.getManager().reloadTop();
-		Main.getManager().loadPlayers();
+		Main.getManager().reloadAll();
 	}
 
 }

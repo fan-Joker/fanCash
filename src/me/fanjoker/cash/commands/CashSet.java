@@ -33,6 +33,7 @@ public class CashSet extends SubCommand {
 				return;
 			}
 
+			player.setValue(valor.doubleValue());
 			sender.sendMessage(getCashSet(nome, NFormat.format1000(valor)));
 
 		} else {

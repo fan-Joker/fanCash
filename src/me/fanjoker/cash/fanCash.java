@@ -36,10 +36,8 @@ public class fanCash implements Listener {
 	}
 
 	public static boolean hasCash(String name, double value) {
-		return getCashPlayer(name).getValue() >= value;
+		return getCash(name) >= value;
 	}
-
-	public static List<CashPlayer> topList() { return Main.getManager().getTopList(); }
 
 
 }
