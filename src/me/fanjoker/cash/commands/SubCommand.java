@@ -95,7 +95,7 @@ public abstract class SubCommand {
 	}
 
 	public String getIncorrectValue() {
-		return messages.getNotFound();
+		return messages.getIncorrectValue();
 	}
 
 	public String getCashToggle1(String toggle) {
