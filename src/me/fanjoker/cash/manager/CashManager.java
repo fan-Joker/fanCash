@@ -23,11 +23,6 @@ public class CashManager {
     public Map<String, CashPlayer> getCache() {
         return cache;
     }
-//    public List<CashPlayer> getTopList() {
-//        topList.sort(Comparator.comparing(CashPlayer::getValue).reversed());
-//        return topList;
-//    }
-
     public Map<String, Double> getTopList() {
         return topList;
     }
@@ -103,7 +98,6 @@ public class CashManager {
     }
 
     public void savePlayer(String name) {
-        if (getCache().isEmpty()) return;
         CashPlayer player = getPlayer(name);
         set(name, "value", player.getValue());
         set(name, "toggle", player.isToggle());
@@ -116,7 +110,7 @@ public class CashManager {
     }
     public void loadPlayers() {
         if (Bukkit.getOnlinePlayers().isEmpty()) return;
-        Bukkit.getOnlinePlayers().forEach(player -> {loadPlayer(player.getName());});
+        Bukkit.getOnlinePlayers().forEach(player -> loadPlayer(player.getName()));
     }
 
 

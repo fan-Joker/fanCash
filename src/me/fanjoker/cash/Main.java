@@ -1,31 +1,37 @@
 package me.fanjoker.cash;
 
+import me.fanjoker.cash.commands.shop.Shop;
 import me.fanjoker.cash.listener.PlayerJoin;
+import me.fanjoker.cash.listener.PlayerQuit;
 import me.fanjoker.cash.manager.CashConnection;
 import me.fanjoker.cash.config.ConfigManager;
 import me.fanjoker.cash.manager.CashManager;
+import me.fanjoker.cash.others.PAPIHook;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.fanjoker.cash.commands.Cash;
+import me.fanjoker.cash.commands.cash.Cash;
 
 public class Main extends JavaPlugin{
 	
 	private static Main instance;
 	private static CashConnection connection;
-	public static CashManager manager;
+	private static CashManager manager;
 
 	public static ConfigManager configManager;
 
 	@Override
 	public void onEnable() {
-		instance = this;
-		configManager = new ConfigManager();
-		manager = new CashManager();
-		connection = new CashConnection();
+		registerManager();
+
 		configManager.loadConfig("config");
 		connection.openConnectionMySQL();
+		manager.loadPlayers();
+		manager.reloadTop();
+
 		register();
+
+		new PAPIHook().register();
 	}
 
 	@Override
@@ -34,10 +40,20 @@ public class Main extends JavaPlugin{
 		connection.close();
 	}
 
+	private void registerManager() {
+		instance = this;
+		configManager = new ConfigManager();
+		manager = new CashManager();
+		connection = new CashConnection();
+	}
+
 	private void register() {
+		getCommand("shop").setExecutor(new Shop());
 		getCommand("cash").setExecutor(new Cash("cash"));
+		Bukkit.getPluginManager().registerEvents(new Shop(), this);
+		Bukkit.getPluginManager().registerEvents(new PlayerQuit(), this);
 		Bukkit.getPluginManager().registerEvents(new PlayerJoin(), this);
-		Bukkit.getScheduler().runTaskTimer(instance, manager::reloadAll, 0, 5*60*20);
+		Bukkit.getScheduler().runTaskTimer(instance, manager::reloadAll, 5*60*20, 5*60*20);
 	}
 
 	public static CashManager getManager() {

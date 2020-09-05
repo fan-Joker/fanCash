@@ -1,7 +1,6 @@
-package me.fanjoker.cash.commands;
+package me.fanjoker.cash.commands.cash;
 
 import me.fanjoker.cash.Main;
-import me.fanjoker.cash.fanCash;
 import org.bukkit.command.CommandSender;
 
 public class CashReload extends SubCommand {

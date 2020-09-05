@@ -1,16 +1,12 @@
-package me.fanjoker.cash.commands;
+package me.fanjoker.cash.commands.cash;
 
-import java.util.Collections;
-import java.util.List;
+import java.nio.Buffer;
 import java.util.Map;
 
-import me.fanjoker.cash.others.CashPlayer;
 import me.fanjoker.cash.others.NFormat;
 import org.bukkit.Bukkit;
 import org.bukkit.command.CommandSender;
-import org.bukkit.plugin.Plugin;
 
-import me.fanjoker.cash.fanCash;
 import me.fanjoker.cash.Main;
 
 public class CashTop extends SubCommand {
@@ -29,10 +25,8 @@ public class CashTop extends SubCommand {
 			sender.sendMessage(getCashTopTittle());
 			sender.sendMessage(" ");
 			for (String name : moneytop.keySet()) {
-
-				double value = moneytop.get(name);
-				sender.sendMessage(getCashTopSettings(i, name, NFormat.format1000(value)));
-
+				sender.sendMessage(getCashTopSettings(i, name,
+						NFormat.format1000(moneytop.get(name))));
 				i++;
 			}
 			sender.sendMessage(" ");

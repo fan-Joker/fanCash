@@ -1,4 +1,4 @@
-package me.fanjoker.cash.commands;
+package me.fanjoker.cash.commands.cash;
 
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;

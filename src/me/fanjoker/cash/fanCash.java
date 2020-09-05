@@ -19,7 +19,7 @@ public class fanCash implements Listener {
 		return getCashPlayer(name).getValue();
 	}
 
-	public static boolean getBolean(String name) {
+	public static boolean getToggle(String name) {
 		return getCashPlayer(name).isToggle();
 	}
 

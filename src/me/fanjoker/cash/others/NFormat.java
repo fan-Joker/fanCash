@@ -6,10 +6,10 @@ import java.util.Locale;
 
 public class NFormat {
 
-    private static String formats2[] = {"-", "-", " mil", " milhões", " bilhões", " trilhões", " quadrilhões",
+    private static final String[] formats2 = {"-", "-", " mil", " milhões", " bilhões", " trilhões", " quadrilhões",
             " quintilhões", " sextilhões", " septilhões", " octilhões", " nonilhões", " decilhões", " undecilhões",
             " duodecilhões", " tredecilhões", " quatrodecilhões", " quindecilhões"};
-    public static String format1[] = {"-", "-", "K", "M", "B", "T", "Q", "QQ", "S", "SS", "OC", "N", "D", "UN", "DD", "TD", "QD", "QQD"};
+    public static final String[] format1 = {"-", "-", "K", "M", "B", "T", "Q", "QQ", "S", "SS", "OC", "N", "D", "UN", "DD", "TD", "QD", "QQD"};
 
     public static String format1000(Object valor)
     {

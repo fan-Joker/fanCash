@@ -15,14 +15,23 @@ public class CashConnection {
     private static Connection con = null;
     private String prefix = "Cash";
 
+    public boolean isMysql() {
+        return Main.configManager.getConfig("config").getYaml().getBoolean("Mysql.enable");
+    }
+
     private void createTables() {
         table1();
     }
     private void table1() {
         PreparedStatement stm = null;
         try {
-            PreparedStatement localPreparedStatement = con.prepareStatement("CREATE TABLE IF NOT EXISTS `Cash_PLAYER`(" +
-                    "`Id` INTEGER PRIMARY KEY, `name` TEXT, `value` TEXT, `toggle` TEXT)");
+            PreparedStatement localPreparedStatement;
+            if (isMysql())
+                localPreparedStatement = con.prepareStatement("CREATE TABLE IF NOT EXISTS `Cash_PLAYER`(" +
+                        "`Id` INT AUTO_INCREMENT PRIMARY KEY, `name` TEXT, `value` TEXT, `toggle` TEXT)");
+            else
+                localPreparedStatement = con.prepareStatement("CREATE TABLE IF NOT EXISTS `Cash_PLAYER`(" +
+                        "`Id` INTEGER PRIMARY KEY, `name` TEXT, `value` TEXT, `toggle` TEXT)");
             localPreparedStatement.executeUpdate();
         } catch (SQLException e) {
             e.printStackTrace();
@@ -39,7 +48,7 @@ public class CashConnection {
             String database_name = config.getString("Mysql.database");
             String username = config.getString("Mysql.username");
             String password = config.getString("Mysql.password");
-            Integer port = config.getInt("Mysql.port");
+            int port = config.getInt("Mysql.port");
 
             String URL = "jdbc:mysql://" + hostname + ":" + port + "/" + database_name;
 

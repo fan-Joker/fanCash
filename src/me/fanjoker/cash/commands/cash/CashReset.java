@@ -1,9 +1,6 @@
-package me.fanjoker.cash.commands;
-
-import java.math.BigDecimal;
+package me.fanjoker.cash.commands.cash;
 
 import me.fanjoker.cash.Main;
-import me.fanjoker.cash.fanCash;
 import me.fanjoker.cash.others.CashPlayer;
 import org.bukkit.command.CommandSender;
 

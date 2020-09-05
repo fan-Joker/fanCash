@@ -25,11 +25,32 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0cd184b7-a21d-4260-a944-4b6241fb496b" name="Default Changelist" comment="Corrigido alguns bugs sobre o top e ao salvar o cache">
+    <list default="true" id="0cd184b7-a21d-4260-a944-4b6241fb496b" name="Default Changelist" comment="Código mais otimizado e corrigido alguns bugs nas mensagens">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/PlaceholderAPI_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/shop/Shop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/ItemBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/PAPIHook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fanCash.iml" beforeDir="false" afterPath="$PROJECT_DIR$/fanCash.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/SubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/SubCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/others/Runnable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/Cash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/Cash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashEnviar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashEnviar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashHelp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashReload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashReload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashRemove.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashRemove.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashReset.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashSet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashToggle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashToggle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/CashTop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/CashTop.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/Numbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/SubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/cash/SubCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/fanCash.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/fanCash.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/listener/PlayerJoin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/listener/PlayerJoin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/manager/CashConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/manager/CashConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/manager/CashManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/manager/CashManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/me/fanjoker/cash/others/NFormat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/NFormat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/plugin.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/plugin.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,9 +77,10 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1580843392075" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/aa/Test Plugins/plugins" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PlaceholderAPI-2.9.2.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15429688" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
@@ -152,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596510328916</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Código mais otimizado e corrigido alguns bugs nas mensagens">
+      <created>1596691793885</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1596691793885</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,25 +203,26 @@
     <MESSAGE value="Melhorado algumas mensagens e corrigido o bug do Cash Toggle" />
     <MESSAGE value="Corrigido alguns bugs e modificadas algumas mensagens." />
     <MESSAGE value="Corrigido alguns bugs sobre o top e ao salvar o cache" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrigido alguns bugs sobre o top e ao salvar o cache" />
+    <MESSAGE value="Código mais otimizado e corrigido alguns bugs nas mensagens" />
+    <option name="LAST_COMMIT_MESSAGE" value="Código mais otimizado e corrigido alguns bugs nas mensagens" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1596146182514">
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser" timestamp="1597179903392">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596146182514" />
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596155985308">
+    <state x="765" y="221" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597179903392" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1597453474513">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596155985308" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597453474513" />
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog" timestamp="1596170136628">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="92" y="92" width="1736" height="856" key="DiffContextDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596170136628" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1596170762188">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597360663385">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596170762188" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597360663385" />
     <state x="540" y="257" width="586" height="483" key="Github.ShareDialog" timestamp="1596169590557">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -201,22 +231,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="841" y="240" key="RollbackChangesDialog/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596169283430" />
-    <state x="440" y="94" key="SettingsEditor" timestamp="1596170390682">
+    <state x="440" y="94" key="SettingsEditor" timestamp="1597179896913">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596170390682" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596510332714">
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1597179896913" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1596691797944">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596510332714" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596691797944" />
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1596167962672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="769" y="434" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596167962672" />
-    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1596199373592">
+    <state x="667" y="253" width="585" height="534" key="find.popup" timestamp="1598764504382">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1596199373592" />
+    <state x="667" y="253" width="585" height="534" key="find.popup/0.0.1920.1040/-1920.0.1920.1040@0.0.1920.1040" timestamp="1598764504382" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1596169254024">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

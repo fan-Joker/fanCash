@@ -1,4 +1,4 @@
-package me.fanjoker.cash.commands;
+package me.fanjoker.cash.commands.cash;
 
 import java.math.BigDecimal;
 
@@ -9,7 +9,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import me.fanjoker.cash.Main;
-import me.fanjoker.cash.fanCash;
 
 public class CashEnviar extends SubCommand {
 

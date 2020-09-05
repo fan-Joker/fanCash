@@ -1,11 +1,9 @@
-package me.fanjoker.cash.commands;
+package me.fanjoker.cash.commands.cash;
 
 import java.util.Arrays;
 import java.util.List;
 
-import me.fanjoker.cash.Main;
 import me.fanjoker.cash.config.Messages;
-import me.fanjoker.cash.fanCash;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
 

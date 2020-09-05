@@ -9,7 +9,6 @@ public class PlayerJoin implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
-        String name = e.getPlayer().getName();
-        Main.getManager().loadPlayer(name);
+        Main.getManager().loadPlayer(e.getPlayer().getName());
     }
 }
