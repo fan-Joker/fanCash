@@ -27,6 +27,35 @@
   <component name="ChangeListManager">
     <list default="true" id="0cd184b7-a21d-4260-a944-4b6241fb496b" name="Default Changelist" comment="Código mais otimizado e corrigido alguns bugs nas mensagens">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/PlaceholderAPI_2_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/META-INF/fanCash.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/Cash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashAdd.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashEnviar.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashHelp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashReload.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashRemove.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashReset.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashSet.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashToggle.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/CashTop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/Numbers.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/cash/SubCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/commands/shop/Shop.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/config/ConfigManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/config/Configuration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/config/Messages.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/fanCash.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/listener/PlayerJoin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/listener/PlayerQuit.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/manager/CashConnection.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/manager/CashManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/others/CashPlayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/others/ItemBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/others/NFormat.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/me/fanjoker/cash/others/PAPIHook.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/fanCash/plugin.yml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/commands/shop/Shop.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/ItemBuilder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/me/fanjoker/cash/others/PAPIHook.java" afterDir="false" />
