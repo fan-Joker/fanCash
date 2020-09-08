@@ -18,6 +18,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
+import sun.security.acl.WorldGroupImpl;
 
 import java.util.Arrays;
 
@@ -32,7 +33,8 @@ public class Shop implements CommandExecutor, Listener {
         }
 
         Player p = (Player)s;
-        p.openInventory(mainInv(p));
+        p.sendMessage("§cO Shop está atualmente offline.");
+//        p.openInventory(mainInv(p));
 
         return false;
     }
@@ -74,8 +76,8 @@ public class Shop implements CommandExecutor, Listener {
 
             } else if (e.getInventory().getTitle().equalsIgnoreCase("Loja de Cash - Chaves")) {
 
-                if (e.getSlot() == 11) buyItem(p, 150, "booster");
-                else if (e.getSlot() == 13) buyItem(p, 270, "resetkdr");
+                if (e.getSlot() == 11) buyItem(p, 200, "booster");
+                else if (e.getSlot() == 13) buyItem(p, 100, "/aclan resetkdr %name%");
                 else if (e.getSlot() == 15) buyItem(p, 100, "/effect %name% minecraft:haste 300 2");
 
             }

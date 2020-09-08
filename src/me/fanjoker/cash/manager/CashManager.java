@@ -54,19 +54,23 @@ public class CashManager {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        loadPlayer(name);
     }
 
     public void loadPlayer(String name) {
-        createAccount(name);
+        if (!existsPlayer(name))
+            createAccount(name);
+
         PreparedStatement stm = null;
         try {
             stm = getCon().prepareStatement("SELECT * FROM `Cash_PLAYER` WHERE LOWER(`name`) = ?");
             stm.setString(1, name.toLowerCase());
             ResultSet rs = stm.executeQuery();
             if (rs.next()) {
-                CashPlayer cash = new CashPlayer(rs.getString("name"), rs.getDouble("value"), rs.getBoolean("toggle"));
-                getCache().put(rs.getString("name").toLowerCase(), cash);
+                CashPlayer cash = new CashPlayer(
+                        rs.getString("name"),
+                        rs.getDouble("value"),
+                        rs.getBoolean("toggle"));
+                getCache().put(name.toLowerCase(), cash);
             }
             rs.close();
             stm.close();
@@ -101,12 +105,12 @@ public class CashManager {
         CashPlayer player = getPlayer(name);
         set(name, "value", player.getValue());
         set(name, "toggle", player.isToggle());
-        getCache().remove(player.getName().toLowerCase());
     }
 
     public void savePlayers() {
         if (getCache().isEmpty()) return;
-        getCache().values().forEach(cash -> { savePlayer(cash.getName());});
+        getCache().values().forEach(cash -> savePlayer(cash.getName()));
+        getCache().clear();
     }
     public void loadPlayers() {
         if (Bukkit.getOnlinePlayers().isEmpty()) return;
@@ -115,7 +119,7 @@ public class CashManager {
 
 
     private void set(String name, String path, Object value) {
-        createAccount(name);
+        if (!existsPlayer(name)) createAccount(name);
         PreparedStatement stm = null;
         try {
             stm = getCon().prepareStatement("UPDATE `Cash_PLAYER` SET `" + path + "` = ? WHERE LOWER(`name`) = ?");

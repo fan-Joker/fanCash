@@ -7,6 +7,7 @@ import me.fanjoker.cash.manager.CashConnection;
 import me.fanjoker.cash.config.ConfigManager;
 import me.fanjoker.cash.manager.CashManager;
 import me.fanjoker.cash.others.PAPIHook;
+import net.minecraft.server.v1_8_R3.Packet;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -54,6 +55,7 @@ public class Main extends JavaPlugin{
 		Bukkit.getPluginManager().registerEvents(new PlayerQuit(), this);
 		Bukkit.getPluginManager().registerEvents(new PlayerJoin(), this);
 		Bukkit.getScheduler().runTaskTimer(instance, manager::reloadAll, 5*60*20, 5*60*20);
+		
 	}
 
 	public static CashManager getManager() {
