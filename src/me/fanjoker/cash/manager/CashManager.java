@@ -66,8 +66,7 @@ public class CashManager {
             stm.setString(1, name.toLowerCase());
             ResultSet rs = stm.executeQuery();
             if (rs.next()) {
-                CashPlayer cash = new CashPlayer(
-                        rs.getString("name"),
+                CashPlayer cash = new CashPlayer(rs.getString("name"),
                         rs.getDouble("value"),
                         rs.getBoolean("toggle"));
                 getCache().put(name.toLowerCase(), cash);
